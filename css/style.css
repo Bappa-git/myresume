@@ -21,18 +21,23 @@
 }
 
 body{
-    position: absolute;
-    left: 300px;
-    top: 0px;
+    /* position: absolute; */
+    /* left: 300px; */
+    /* top: 0px; */
+    position: fixed;
     background-color: rgb(238, 231, 231);
 }
-header{
-    width: 300px; 
-    height: 100%;
+.main{
+    display: flex;
+    
+
+}
+.header{
+    width: 20%; 
+    height: 100vh;
+    /* position: fixed; */
+    overflow-y:scroll;
     background: #040b14;
-    position: fixed;
-    top: 0px;
-    left: 0px;
     z-index: 999;
 }
 .hdrflx{
@@ -47,7 +52,7 @@ header{
 .logo img{
 
     width: 70%;
-    height: 169px;
+    
     border: 7px solid #212431;
     padding: 1%;
     border-radius:50%;
@@ -133,24 +138,37 @@ nav li a button:hover{
 }
 
           /* header end */
+.home{
+    width: 80%;
+    height: 100vh;
+    overflow-y:scroll;
+}
 #banner{
     width: 100%;
-    height: 730px;
+    height: 100vh;
     position: relative;
 
 }
 #banner img{
     width: 100%;
-    height: 730px;
+    height: 100vh;
 }
 .overlay{
     width: 100%;
-   height: 730px;
+   height: 100%;
     background-color: rgba(70, 181, 181, 0.7);
     position: absolute;
     top: 0px;
    
 }
+.ovr-flx-left{
+    width: 55%;
+
+}
+.ovr-flx-right{
+    width: 45%;
+}
+
 .toggleBtn{
     display: none;
     position: absolute;
@@ -190,8 +208,8 @@ nav li a button:hover{
    
 }
 #about{
-    width: 1150px;
-    margin: auto;
+    width: 100%;
+  
 }
 .about-box1-flx{
     display: flex;
@@ -238,7 +256,7 @@ nav li a button:hover{
 }
 .about-box2-flx{
     display: flex;
-    column-gap: 30px;
+   justify-content: space-between;
     padding-top: 10px;
 }
 .about-box2 h5{
@@ -292,7 +310,7 @@ label img{
 }
 
 #resume{
-    width: 1150px;
+    width: 100%;
     margin: auto;
     display: flex;
    column-gap: 10px;
@@ -347,7 +365,7 @@ label img{
     color: var(--text-color);
 }
 #contact{
-    width: 1150px;
+    width: 100%;
     margin: auto;
     /* height: 700px; */
 }

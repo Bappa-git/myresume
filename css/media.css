@@ -1,13 +1,3 @@
-@media (max-width:768px){
+@media(max-width:1024px){
 
-body{
-    left: 0px;
-}
-header{
-    display: none;
-    
-}
-.toggleBtn{
- display: block;
-}
 }
